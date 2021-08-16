@@ -1,0 +1,156 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   display: grid;
+   grid-template-columns: 21.5% 78.5%;
+}
+
+::-webkit-scrollbar { display: none; }
+
+.home-img-container {
+   display: inline;
+   height: 125vh;
+   width: 125vh;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.home-image {
+   display: inline;
+   height: 125vh;
+}
+
+nav {
+   background: #05192D;
+   width: 100%;
+   height: 100vh;
+   overflow: scroll;
+}
+
+nav img {
+   height: 8vh;
+}
+
+nav a {
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   font-size: 3.5vh;
+   padding: 1vh 3vh;
+   transition: .15s;
+}
+
+nav h4 {
+   font-size: 2.7vh;
+}
+
+nav a:hover {
+   background-color: #213147;
+}
+
+nav a img {
+   display: inline;
+   height: 3.5vh;
+   filter: invert(100%);
+   margin-right: 1.5vh;
+   margin-bottom: -.2vh;
+   transition: .15s;
+}
+
+nav a:hover img {
+   filter: invert(77%) sepia(27%) saturate(7425%) hue-rotate(93deg) brightness(106%) contrast(98%);
+}
+
+nav a p {
+   display: inline;
+}
+
+.learn-w-squirrel-logo {
+   width: 100%;
+   margin-top: 1vh;
+}
+
+nav h2 {
+   font-size: 4vh;
+   color: #fff;
+   margin: 2.5vh 2vh;
+   font-family: "Nunito";
+   display: grid;
+   grid-template-columns: 30% 70%;
+   font-weight: 600;
+}
+
+nav h4 {
+   text-transform: uppercase;
+   color: #B4BAC0;
+   margin: .8vh 3.5vh;
+   letter-spacing: .5ch;
+}
+
+.copyright {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: #eee;
+   text-align: center;
+   font-size: 3vh;
+   height: 15vh;
+}
+
+.copyright a {
+   color: #079cb3;
+}
+
+.heading {
+   font-size: 8vh;
+   text-align: center;
+   margin: 5vh;
+   font-family: "Merriweather";
+}
+
+.content {
+   font-family: "Merriweather";
+   line-height: 1.5;
+   padding: 2vh;
+   font-size: 2.8vh;
+}
+
+.inner-content {
+   height: 85vh;
+   overflow: auto;
+}
+
+.about-header {
+   border-radius: 100%;
+   margin: 2vh 46vh;
+   width: 40vh;
+}
+
+.blog-img {
+   border-radius: 2.5vh;
+   margin: 2vh 35vh;
+   width: 60vh;
+   transition: .3s;
+}
+
+.blog-img:hover {
+   box-shadow: 0 0 1vh #000;
+   transform: scale(1.05);
+   animation-name: blog-wiggle;
+   animation-duration: 1s;
+   animation-delay: .3s;
+}
+
+@keyframes blog-wiggle {
+   0% { transform: scale(1.05) rotate(0); }
+   25% { transform: scale(1.05) rotate(3deg); }
+   75% { transform: scale(1.05) rotate(-3deg); }
+   100% { transform: scale(1.05) rotate(0); }
+}
+
+/* #03EF62 */
