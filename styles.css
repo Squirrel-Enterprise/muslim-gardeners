@@ -31,6 +31,14 @@ body {
    filter: invert(15%);
 }
 
+.choose:last-child:hover img {
+   filter: invert(89%) sepia(22%) saturate(2540%) hue-rotate(355deg) brightness(103%) contrast(109%);
+}
+
+.choose:first-child:hover img {
+   filter: invert(92%) sepia(10%) saturate(727%) hue-rotate(14deg) brightness(109%) contrast(105%);
+}
+
 .choose:hover p {
    opacity: 1;
 }
