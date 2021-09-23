@@ -1,55 +1,151 @@
 * {
    padding: 0;
    margin: 0;
+   color: #2d2d2d;
 }
 
 body {
-   height: 100vh;
-   background-color: #f5f5f5;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   background-color: #c5e3fe;
 }
 
-.choose {
+.home-button img {
+   position: fixed;
+   top: 1vh;
+   left: 1vw;
+   height: 10vh;
+}
+
+::-webkit-scrollbar { display: none; }
+
+.home-img-container {
+   background: linear-gradient(to bottom right, #58DE7B, #16B9E1, #8958D3);
+   margin: .5vh;
+   padding: .6vh;
+   border-radius: .5vh;
    display: inline-block;
+   color: #2d2d2d;
    text-align: center;
-   margin: 5vw;
 }
 
-.choose:first-child {
-
+.home-img-container p {
+   color: #2d2d2d;
+   background-color: #eee;
+   border-radius: 2vh;
+   padding: .1vh .5vw;
+   font-family: "Nunito";
 }
 
-.choose img {
-   width: 20vw;
-   filter: invert(75%);
-   transition: .5s;
+.copyright {
+   text-align: center;
+   font-size: 2.5vh;
+   padding: 1vh;
+   color: #f5f5f5;
+   border-radius: 3vh;
+   margin: 2vh 2vw 4vh 2vw;
 }
 
-.choose:hover img {
-   filter: invert(15%);
+.copyright a {
+   color: #079cb3;
 }
 
-.choose:last-child:hover img {
-   filter: invert(89%) sepia(22%) saturate(2540%) hue-rotate(355deg) brightness(103%) contrast(109%);
+.testimonials {
+   align-items: end;
 }
 
-.choose:first-child:hover img {
-   filter: invert(92%) sepia(10%) saturate(727%) hue-rotate(14deg) brightness(109%) contrast(105%);
+.blckqte-gradient {
+   background: linear-gradient(to bottom right, #58DE7B, #16B9E1, #8958D3);
+   padding: .6vh;
+   border-radius: 2vh;
+   display: inline-block;
+   vertical-align: text-top;
+   margin: 2vh;
 }
 
-.choose:hover p {
-   opacity: 1;
+blockquote {
+   background-color: #f6f6f6;
+   border-radius: 2vh;
+   padding: 6vh;
+   width: 15vw;
+   height: 35vh;
 }
 
-.choose p {
-   opacity: 0;
-   font-size: 6vw;
-   font-family: cursive;
-   background-color: #ebebeb;
-   padding: .5vw 2.5vw;
-   border-radius: 15vh;
-   color: #363636;
-   transition: .5s;
+.heading {
+   font-size: 8vh;
+   text-align: center;
+   margin: 5vh;
+   font-family: "Merriweather";
 }
+
+.content {
+   font-family: "Merriweather";
+   line-height: 1.5;
+   padding: 2vh;
+   margin: 2vh 2vw;
+   font-size: 2.8vh;
+   text-align: center;
+}
+
+.blog-content, .courses-content {
+   font-family: "Merriweather";
+   line-height: 1.5;
+   padding: 2vh;
+   margin: 0 0 0 22vw;
+   font-size: 2.8vh;
+   text-align: center;
+   scroll-behavior: smooth;
+   overflow: hidden;
+}
+
+.choose-courses div {
+   margin: 2.5vh;
+   height: 55vh;
+   width: 35vh;
+   display: inline-block;
+   border-radius: 5vh;
+   text-align: center;
+   background-color: #dddddd;
+}
+
+.choose-courses div img {
+   border-radius: 5vh;
+}
+
+.course-description, .choose-courses {
+   height: 100vh;
+   overflow: auto;
+}
+
+.blog-content div {
+   height: 100vh;
+   overflow: auto;
+}
+
+.about-header {
+   border-radius: 100%;
+   margin: 2vh 46vh;
+   width: 40vh;
+}
+
+.blog-img {
+   border-radius: 2.5vh;
+   margin: 2vh 35vh;
+   width: 60vh;
+   transition: .3s;
+}
+
+.blog-img:hover {
+   box-shadow: 0 0 1vh #000;
+   transform: scale(1.05);
+   animation-name: blog-wiggle;
+   animation-duration: 1s;
+   animation-delay: .3s;
+}
+
+@keyframes blog-wiggle {
+   0% { transform: scale(1.05) rotate(0); }
+   25% { transform: scale(1.05) rotate(3deg); }
+   75% { transform: scale(1.05) rotate(-3deg); }
+   100% { transform: scale(1.05) rotate(0); }
+}
+
+/* #03EF62 */
