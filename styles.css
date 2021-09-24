@@ -26,18 +26,18 @@ body {
    "e e e g g g f f f";
 }
 
-.home-img-container:nth-child(1) { grid-area: a; background-image: url("Images/home-1.webp"); height: 43.5vh; }
-.home-img-container:nth-child(2) { grid-area: b; background-image: url("Images/home-2.webp"); height: 25vh; }
-.home-img-container:nth-child(3) { grid-area: c; background-image: url("Images/home-3.webp"); height: 43.5vh; }
-.home-img-container:nth-child(4) { grid-area: d; background-image: url("Images/home-4.webp"); height: 35vh; }
-.home-img-container:nth-child(5) { grid-area: e; background-image: url("Images/home-5.webp"); height: 43.5vh; }
-.home-img-container:nth-child(6) { grid-area: f; background-image: url("Images/home-6.webp"); height: 43.5vh; }
-.home-img-container:nth-child(7) { grid-area: g; background-image: url("Images/home-7.webp"); height: 25vh; }
+.home-img-container:nth-child(1) { grid-area: a; background-image: url("Images/home-1.webp"); height: 42vh; }
+.home-img-container:nth-child(2) { grid-area: b; background-image: url("Images/home-2.webp"); height: 21vh; }
+.home-img-container:nth-child(3) { grid-area: c; background-image: url("Images/home-3.webp"); height: 42vh; }
+.home-img-container:nth-child(4) { grid-area: d; background-image: url("Images/home-4.webp"); height: 38.8vh; }
+.home-img-container:nth-child(5) { grid-area: e; background-image: url("Images/home-5.webp"); height: 42vh; }
+.home-img-container:nth-child(6) { grid-area: f; background-image: url("Images/home-6.webp"); height: 42vh; }
+.home-img-container:nth-child(7) { grid-area: g; background-image: url("Images/home-7.webp"); height: 21vh; }
 
 .home-img-container {
    background-position: center;
    background-size: cover;
-   margin: 2vh;
+   margin: 1.2vh;
    padding: .6vh;
    border-radius: .5vh;
    display: inline-block;
@@ -51,8 +51,8 @@ body {
 }
 
 .home-img-container p {
-   color: #2d2d2d;
-   background-color: rgb(238, 238, 238, .5);
+   /* text-shadow: 0vh 0vh .5vh #fff; */
+   background-color: rgb(238, 238, 238, .25);
    border-radius: 2vh;
    padding: .1vh .5vw;
    font-family: "Nunito";
@@ -62,6 +62,11 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: .25s;
+}
+
+.home-img-container:hover p {
+   background-color: rgb(238, 238, 238, .95);
 }
 
 .home-img-container a { text-decoration: none; }
